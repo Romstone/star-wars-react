@@ -10,3 +10,12 @@ import friend9 from '../images/friend9.jpg'
 
 export const friends = [friend1, friend2, friend3, friend4, friend5,
     friend6, friend7, friend8, friend9];
+
+export const homePage = 'home';
+export const aboutMePage = 'about_me';
+export const starWarsPage = 'star_wars';
+export const contactsPage = 'contacts';
+export const swBaseUrl = 'https://sw-info-api.herokuapp.com/v1';
+export const key = 'AIzaSyAAxg-dWx9WKZbsyIq8fjMiXcxyhbXAI9w';
+export const searchUrl = 'https://www.googleapis.com/customsearch/v1?';
+export const thirtyDaysInMs = 30 * 24 * 60 * 60 * 1000;

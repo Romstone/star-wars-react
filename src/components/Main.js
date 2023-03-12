@@ -1,16 +1,29 @@
 import React from 'react';
-import Hero from "./Hero";
-import Friends from "./Friends";
-import FarGalaxy from "./FarGalaxy";
+import Home from "./Home";
+import AboutMe from "./AboutMe";
+import StarWars from "./StarWars";
+import Contacts from "./Contacts";
+import {aboutMePage, contactsPage, starWarsPage} from "../utils/constants";
 
-const Main = () =>
+const Main = (props) =>
 {
+    switch (props.page)
+    {
+        case aboutMePage: return (
+            <AboutMe/>
+        )
+        case starWarsPage: return (
+            <StarWars/>
+        )
+        case contactsPage: return (
+            <Contacts/>
+        )
+        default: return (
+            <Home/>
+        )
+    }
     return (
-        <main className="clearfix">
-            <Hero/>
-            <Friends/>
-            <FarGalaxy/>
-        </main>
+        <Home/>
     );
 };
 
