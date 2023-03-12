@@ -24,9 +24,18 @@ export class Repository
 
     getPicture = async (pic) =>
     {
-        const responseData = await Api.getPicture(pic);
-        const picture = await responseData.items[0].pagemap.cse_thumbnail[0].src;
-        return picture;
+        if (pic === 'Obi-Wan Kenobi')
+        {
+            const responseData = await Api.getPicture(pic);
+            const picture = await responseData.items[1].pagemap.cse_thumbnail[0].src;
+            return picture;
+        }
+        else
+        {
+            const responseData = await Api.getPicture(pic);
+            const picture = await responseData.items[0].pagemap.cse_thumbnail[0].src;
+            return picture;
+        }
     }
 
     getPlanets = async () =>
