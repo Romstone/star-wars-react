@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import style from "./contacts.module.css";
 import {Repository} from "../repository/repository";
-import data from "bootstrap/js/src/dom/data";
 
 class Contacts extends Component
 {
@@ -39,7 +38,7 @@ class Contacts extends Component
     {
         return (
             <div className={style.container}>
-                <form action="action_page.php"/>
+                <form action=""/>
                 <label htmlFor="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
 
@@ -48,9 +47,6 @@ class Contacts extends Component
 
                 <label htmlFor="country">Country</label>
                 <select id="country" name="country">
-                    {/*<option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>*/}
                     {this.state.planets_names.map((item,index)=> <option value={item} key={index}>{item}</option>)}
                 </select>
 
