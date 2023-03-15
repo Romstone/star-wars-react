@@ -16,6 +16,6 @@ export const aboutMePage = 'about_me';
 export const starWarsPage = 'star_wars';
 export const contactsPage = 'contacts';
 export const swBaseUrl = 'https://sw-info-api.herokuapp.com/v1';
-export const key = 'AIzaSyAAxg-dWx9WKZbsyIq8fjMiXcxyhbXAI9w';
+export const key = 'UseYourOwnKey';
 export const searchUrl = 'https://www.googleapis.com/customsearch/v1?';
 export const thirtyDaysInMs = 30 * 24 * 60 * 60 * 1000;
